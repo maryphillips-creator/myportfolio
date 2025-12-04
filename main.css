@@ -1,0 +1,112 @@
+* body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+    color:lightyellow
+}
+
+h3 {
+    color:lightyellow
+}
+
+h5 {
+    color:lightyellow
+}
+
+
+body {
+    color:lightyellow;
+    font-family: "Garamond", serif;
+}
+
+
+p {
+    color:azure
+}
+
+.important {
+    color:lightyellow;
+    font-weight: 900;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.list {
+    float: left;
+    width: 45%;
+    color:lightyellow;
+    padding: 14px;
+}
+
+img {
+      display: block;
+      margin: auto;
+}
+
+* {box-sizing: border-box}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 1000px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+@media screen and (max-width: 480px) {
+  body {
+    background: lightgreen;
+  }
+    .list {
+        width: 100%;
+    }
+    .responsiveImg {
+        width: 100%
+    }
+}
+
+
